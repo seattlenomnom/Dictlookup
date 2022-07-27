@@ -7,6 +7,10 @@
  *
  * Programmer: Mark Crapser.
  *
+ *
+ * 07/27/2022
+ * fix in your mind how strcmp() works in an if(...) construct. Write string
+ * comparison programs.
 */
 
 
@@ -65,7 +69,7 @@ int lookup(const struct entry dictionary[], const char search[],
     int i = 0;
 
    for(i = 0; i < entries; ++i)
-      if(strcmp(search, dictionary[i].word))
+      if(!strcmp(search, dictionary[i].word))
               return(i);
 
     return(-1);

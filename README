@@ -8,4 +8,7 @@
 *     Programmer: Mark Crapser.
 *
 *
+*  07/27/2000
+*  fix in your mind how strcmp() work in an if(  ) construct. Write string
+I  comparison programs.
 */
